@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'Pepperoni',
+    price: 10.00,
+    category: 'entree',
+    popularity: 9,
+    rating: 8.5,
+    tags: ['family-meal', 'organic', 'brick-oven-cooked']
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +53,8 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
+
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +64,8 @@
 */
 
 //CODE HERE
+
+console.log(pizza.tags[1])
 
 
 /*
@@ -64,6 +77,10 @@
 
 //CODE HERE
 
+let {price} = pizza
+pizza.price = 8.00
+console.log(pizza.price)
+
 
 /*
     Fourth, and last, destructure the category
@@ -73,6 +90,12 @@
 */
 
 //CODE HERE
+//Popularity???
+
+
+let {popularity} = pizza
+pizza.popularity = 9.5
+console.log(pizza.popularity)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -88,6 +111,51 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    {
+        'name': 'Tacos',
+        'price': 10.00,
+        'category': 'entree',
+        'popularity': 6.5,
+        'rating': 8,
+        'tags': ['mexican', 'fresh', 'authentic']
+    },
+    {
+        'name': 'Steak',
+        'price': 15.00,
+        'category': 'entree',
+        'popularity': 7,
+        'rating': 9.5,
+        'tags': ['beef', 'grass-fed', 'grilled']
+    },
+    {
+        'name': 'chips',
+        'price': 2.00,
+        'category': 'appetizer',
+        'popularity': 9,
+        'rating': 8.5,
+        'tags': ['homemade', 'baked', 'side-dish']
+    },
+    {
+        'name': 'Onion Rings',
+        'price': 4.00,
+        'category': 'appetizer',
+        'popularity': 7.5,
+        'rating': 8.5,
+        'tags': ['battered', 'fresh', 'deep-fried']
+    },
+    {
+        'name': 'Apple Pie',
+        'price': 6.00,
+        'category': 'dessert',
+        'popularity': 6,
+        'rating': 7.5,
+        'tags': ['flour-crust', 'fresh', 'brick-oven-cooked']
+    }
+
+
+]
 
 
 
@@ -105,7 +173,8 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(element => element.price > 5)
+console.log(filteredFood)
 
 
 
@@ -150,6 +219,14 @@
 
 //CODE HERE
 
+const filterByProperty = (property, number, type) => {
+    foodArr.filter
+    if(property === rating && popularity && price){
+        console.log
+    } else if(number) {
+        
+    }
+}
 
 /*
     Invoke the `filterByProperty` function passing
